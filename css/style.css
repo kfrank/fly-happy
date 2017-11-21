@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import url(base.css);
+html, body {
+  background-color: #F1F3F7; }
+
+.bg-color-light {
+  background-color: #FAFAFA; }
+
+html, body, .min-h-100-xs {
+  min-height: 100%;
+  height: 100%; }
+
+body .wrap {
+  min-width: 1000px; }
+
+.pointer {
+  cursor: pointer; }
+
+img {
+  max-width: 100%; }
+
+.img img {
+  max-width: 50px; }
+
+.button-round {
+  border-radius: 100%;
+  border: none;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  background: #4c92e7;
+  background: -moz-linear-gradient(-45deg, #4c92e7 0%, #486cf1 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #4c92e7), color-stop(100%, #486cf1));
+  background: -webkit-linear-gradient(-45deg, #4c92e7 0%, #486cf1 100%);
+  background: -o-linear-gradient(-45deg, #4c92e7 0%, #486cf1 100%);
+  background: -ms-linear-gradient(-45deg, #4c92e7 0%, #486cf1 100%);
+  background: linear-gradient(135deg, #4c92e7 0%, #486cf1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c92e7', endColorstr='#486cf1', GradientType=1 );
+  margin-top: .625rem; }
+  .button-round:focus {
+    outline: 0;
+    background: #486cf1;
+    background: -moz-linear-gradient(-45deg, #486cf1 0%, #4c92e7 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, #4c92e7), color-stop(100%, #486cf1));
+    background: -webkit-linear-gradient(-45deg, #486cf1 0%, #4c92e7 100%);
+    background: -o-linear-gradient(-45deg, #486cf1 0%, #4c92e7 100%);
+    background: -ms-linear-gradient(-45deg, #486cf1 0%, #4c92e7 100%);
+    background: linear-gradient(135deg, #486cf1 0%, #4c92e7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c92e7', endColorstr='#486cf1', GradientType=1 ); }
+
+.button-round i {
+  color: #fff; }
+
+.box {
+  background: #FFFFFF;
+  box-shadow: 0 3px 10px 0 #E9EAEF;
+  border-radius: 5px;
+  min-height: 150px;
+  position: relative; }
+  .box .label-copy {
+    position: absolute;
+    bottom: 13px;
+    left: 50px; }
+
+.box input {
+  width: 0;
+  height: 0;
+  text-indent: -1000%;
+  float: left;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.control-head, .control-item .box {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+  .control-head span, .control-item .box span {
+    color: #000; }
+  .control-head:hover, .control-item .box:hover {
+    background-color: #fff;
+    box-shadow: 0px 10px 30px rgba(93, 121, 119, 0.3); }
+    .control-head:hover:after, .control-item .box:hover:after {
+      box-shadow: inset 0px 3px 20px rgba(93, 121, 119, 0.3); }
+
+.flights-item {
+  background: #FFFFFF;
+  box-shadow: 0 3px 10px 0 #E9EAEF;
+  border-radius: 5px; }
+
+.perks {
+  max-height: calc(100vh - 16rem);
+  overflow-y: scroll;
+  position: relative;
+  padding: .5rem; }
+  @media screen and (min-width: 768px) {
+    .perks:after {
+      content: "";
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 49%;
+      height: 100px;
+      background: rgba(255, 255, 255, 0);
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, RGBA(250, 250, 250, 1) 50%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, RGBA(250, 250, 250, 1)));
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, RGBA(250, 250, 250, 1) 50%);
+      background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, RGBA(250, 250, 250, 1) 50%);
+      background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, RGBA(250, 250, 250, 1) 50%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, RGBA(250, 250, 250, 1) 50%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); } }
+  .perks .clear {
+    color: #98A0AF; }
+    .perks .clear.selected {
+      color: #000; }
+  .perks .box {
+    flex-basis: calc(33.3333% - 1rem);
+    position: relative; }
+    .perks .box:after {
+      content: "";
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      border-radius: 100%;
+      background: #FBFBFB;
+      box-shadow: inset 0 3px 10px 0 #E9EAEF;
+      -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
+    .perks .box:before {
+      content: "✓";
+      position: absolute;
+      bottom: 10px;
+      left: 19px;
+      z-index: 3;
+      color: #FAFAFA; }
+    .perks .box img {
+      height: 40px;
+      margin: 1em auto 0; }
+    .perks .box .box-label {
+      font-size: .875em;
+      font-weight: 500;
+      color: #98A0AF;
+      line-height: 1;
+      margin-bottom: .25em; }
+    .perks .box .box-price {
+      font-size: .75em;
+      color: #98A0AF;
+      margin-bottom: -.5em; }
+    .perks .box.selected .box-label {
+      color: #191A45; }
+    .perks .box.selected:after {
+      background-image: linear-gradient(-146deg, #4C93E7 0%, #486CF1 100%);
+      box-shadow: none; }
+
+.flights-item-depart-details-time {
+  line-height: .7; }
+  .flights-item-depart-details-time .bold {
+    color: #000;
+    margin-bottom: 0; }
+
+.flights-item-price {
+  margin-top: -1rem; }
+
+.flights-icons {
+  line-height: 0; }
+
+.btnSearch, .btn-right {
+  background-image: linear-gradient(-146deg, #E2644D 0%, #F1476F 100%);
+  border-radius: 40px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .875rem;
+  letter-spacing: .1em;
+  line-height: .875rem;
+  padding: 1.25rem 2.5rem 1.2rem;
+  font-weight: 500;
+  -webkit-transition: backround 0.5s ease;
+  -moz-transition: backround 0.5s ease;
+  -o-transition: backround 0.5s ease;
+  transition: backround 0.5s ease;
+  outline: 0 !important; }
+
+.list-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.btn-right {
+  padding: .75rem 1.5rem .625rem;
+  font-size: .75em;
+  border-radius: 40px 0 0 40px;
+  margin-right: -1rem; }
+  .btn-right:hover {
+    background: #F1476F;
+    color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
