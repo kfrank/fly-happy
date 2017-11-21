@@ -8,6 +8,7 @@ $(document).ready(function() {
   });
   $('#returning').click(function(){
     $('.returning-date').text('Fri, Feb 2');
+    $('.btnSearch').css('opacity',1);
   });
 
   $('.box').click(function (e) {
@@ -28,28 +29,41 @@ $(document).ready(function() {
         var selected = $(this).attr('id');
 
         if ( selected == 'legroom'){
-          $('.flights-item-379').fadeIn();
+          $('.flights-best .flights-item-379').fadeIn();
+          $('.flights-all .flights-item').fadeIn();
+          $('.flights-all .flights-item-379').hide();
         } else if ( selected == 'checkedbag') {
-          $('.flights-item-200').fadeIn();
+          $('.flights-best .flights-item-200').fadeIn();
+          $('.flights-all .flights-item').fadeIn();
+          $('.flights-all .flights-item-200').hide();
           $('#alaska-1 .flights-item-price').text('$225');
 
         } else if ( selected == 'rushhour') {
-          $('.flights-item-275').fadeIn();
+          $('.flights-best .flights-item-275').fadeIn();
+          $('.flights-all .flights-item').fadeIn();
+          $('.flights-all .flights-item-275').hide();
 
         } else if ( selected == 'aisle' || selected == 'middle' ) {
-          $('.flights-item-161').fadeIn();
+          $('.flights-best .flights-item-161').fadeIn();
+          $('.flights-all .flights-item').fadeIn();
+          $('.flights-all .flights-item-161').hide();
 
         } else if ( selected == 'wifi') {
-          $('.flights-item-200').fadeIn();
+          $('.flights-best .flights-item-200').fadeIn();
+          $('.flights-all .flights-item').fadeIn();
           $('#alaska-1 .flights-item-price').text('$230');
+          $('.flights-all .flights-item-200').hide();
 
         } else {
-          $('.flights-item-200').fadeIn();
+          $('.flights-best .flights-item-200').fadeIn();
+          $('.flights-all .flights-item').fadeIn();
+          $('.flights-all .flights-item-200').hide();
         }
       });
     } else {
-      console.log('null');
       $('.flights-item-161').fadeIn();
+      $('.flights-all .flights-item').fadeIn();
+      $('.flights-all .flights-item-161').hide();
     }
 
       // if ($('.flights-item').hasClass('.alaska') && selected == checkedbag) {
@@ -59,7 +73,7 @@ $(document).ready(function() {
       // }
     
   });
-  $('.flight-details-toggle').each(function(){
+  $('.flight-details-toggle').each(function(e){
     $(this).click(function(){
       $(this).toggleClass('open');
       $(this).next('.flight-details-box').toggleClass('open');
