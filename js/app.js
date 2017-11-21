@@ -35,5 +35,11 @@ $(document).ready(function() {
       }
     });
   });
+  $('.flight-details-toggle').each(function(){
+    $(this).click(function(){
+      $(this).toggleClass('open');
+      $(this).next('.flight-details-box').toggleClass('open');
+    });
+  });
 
 });

@@ -192,6 +192,11 @@ img {
   align-items: center;
   justify-content: center; }
 
+.flight-details-box {
+  display: none !important; }
+  .flight-details-box.open {
+    display: block !important; }
+
 .btn-right {
   padding: .75rem 1.5rem .625rem;
   font-size: .75em;
