@@ -76,8 +76,14 @@ $(document).ready(function() {
   $('.flight-details-toggle').each(function(e){
     $(this).click(function(){
       $(this).toggleClass('open');
+      if ($(this).hasClass('open')){
+        $(this).children('a').text('Hide flight details');
+      } else {
+        $(this).children('a').text('View flight details');
+      }
       $(this).next('.flight-details-box').toggleClass('open');
     });
+
   });
 
 });
