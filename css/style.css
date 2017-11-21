@@ -207,7 +207,8 @@ img {
   padding: .75rem 1.5rem .625rem;
   font-size: .75em;
   border-radius: 40px 0 0 40px;
-  margin-right: -1rem; }
+  margin-right: -1rem;
+  display: block; }
   .btn-right:hover {
     background: #F1476F;
     color: #fff; }
