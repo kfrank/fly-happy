@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+  $('#traveling-to').click(function(){
+    $('.airport-to-name').text('JFK, New York, NY');
+  });
+  $('#departing').click(function(){
+    $('.departing-date').text('Thu, Jan 25');
+  });
+  $('#returning').click(function(){
+    $('.returning-date').text('Fri, Feb 2');
+  });
+
   $('.box').click(function (e) {
     $(this).toggleClass('selected');
   });
@@ -13,20 +23,17 @@ $(document).ready(function() {
     $('.list-placeholder').addClass('hide-xs');
   }); 
   $('.btnSearch').click(function (e) {
-    // for (i=0; i<$('.selected').length; i++)    {
     $('.flights-icons').empty();
     $('.selected').each(function(){
       var selected = $(this).attr('id');
       console.log(selected);
 
-      // $('.flights-icons').prepend('<img style="height: 15px;margin-right:5px;" src="img/icon-' + selected  + '.png" class="icon-' + selected +'" />')
       if ($('.flights-item').hasClass('.alaska') && selected == checkedbag) {
         console.log('yes');
       } else {
         $('.flights-icons').prepend('<img style="height: 15px;margin-right:5px;" src="img/icon-' + selected  + '.png" class="icon-' + selected +'" />')
       }
     });
-    // }
   });
 
 });

@@ -67,11 +67,11 @@
 							</div>
 						</div>
 						<div class="control select flex-basis-50-xs">
-							<a href="#" class="control-head flex-block-xs flex-item-center-xs p-1-xs pointer">
+							<a href="#" id="traveling-to" class="control-head flex-block-xs flex-item-center-xs p-1-xs pointer">
 								<i class="zmdi zmdi-flight-land" style="color: #51C7D9;width: 24px;height:24px;font-size:1.5rem;"></i>
 								<span class="close hide-xs"><i class="zmdi zmdi-close"></i></span>
 								<div class="p-lr-1-xs">
-									<span class="airport-name bold text-8-xs" data-role="to">JFK, New York, NY</span>
+									<span class="airport-to-name bold text-8-xs" data-role="to">&nbsp;</span>
 									<h6 class="text-9-xs text-color-light">Traveling to</h6>
 								</div>			
 							</a>
@@ -88,72 +88,24 @@
 					<div class="control dateinput border-thin-b-light-xs">
 						<div class="flex-block-xs">
 							<div class="flex-basis-50-xs border-thin-r-light-xs">
-								<a href="#" class="control-head flex-block-xs flex-item-center-xs p-1-xs pointer">
+								<a href="#" class="control-head flex-block-xs flex-item-center-xs p-1-xs pointer" id="departing">
 									<i class="zmdi zmdi-calendar" style="color: #51C7D9;width: 24px;height:24px;font-size:1.5rem;"></i>
 									<span class="close hide-xs"><i class="zmdi zmdi-close"></i></span>
 									<div class="control-item p-l-1-xs">
-										<span class="bold text-8-xs">MON, 8 May</span>
+										<span class="bold text-8-xs departing-date">&nbsp;</span>
 										<h6 class="text-9-xs text-color-light">Departing</h6>
 									</div>
 								</a>
-								<div class="control-body hide-xs">
-									<div class="info-message">
-										<i class="zmdi zmdi-info"></i>
-										<!-- <span>Select the depar date then the return date if you need a round trip ticket</span> -->
-										<!-- <span>By the moment theres only One Way tickets, thanks.</span> -->
-									</div>
-									<div class="calendar">
-										<div class="month">
-											<i class="zmdi zmdi-chevron-left"></i>
-											<span>May</span>
-											<i class="zmdi zmdi-chevron-right"></i>
-										</div>
-										<div class="week">
-											<span>S</span>
-											<span>M</span>
-											<span>T</span>
-											<span>W</span>
-											<span>T</span>
-											<span>F</span>
-											<span>S</span>
-										</div>
-										<div class="days"></div>
-									</div>
-								</div>
 							</div>
 							<div class="flex-basis-50-xs">
-								<a href="#" class="control-head flex-block-xs flex-item-center-xs p-1-xs pointer">
+								<a href="#" class="control-head flex-block-xs flex-item-center-xs p-1-xs pointer" id="returning">
 									<i class="zmdi zmdi-calendar" style="color: #51C7D9;width: 24px;height:24px;font-size:1.5rem;"></i>
 									<span class="close hide-xs"><i class="zmdi zmdi-close"></i></span>
 									<div class="control-item p-l-1-xs">
-										<span class="bold text-8-xs">THU, 12 May</span>
+										<span class="bold text-8-xs returning-date">&nbsp;</span>
 										<h6 class="text-9-xs text-color-light">Returning</h6>
 									</div>
 								</a>
-								<div class="control-body hide-xs">
-									<div class="info-message">
-										<i class="zmdi zmdi-info"></i>
-										<!-- <span>Select the depar date then the return date if you need a round trip ticket</span> -->
-										<!-- <span>By the moment theres only One Way tickets, thanks.</span> -->
-									</div>
-									<div class="calendar">
-										<div class="month">
-											<i class="zmdi zmdi-chevron-left"></i>
-											<span>May</span>
-											<i class="zmdi zmdi-chevron-right"></i>
-										</div>
-										<div class="week">
-											<span>S</span>
-											<span>M</span>
-											<span>T</span>
-											<span>W</span>
-											<span>T</span>
-											<span>F</span>
-											<span>S</span>
-										</div>
-										<div class="days"></div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -188,20 +140,12 @@
 								</div>
 								<div class="m-05-xs p-1-xs box text-center-xs" id="legroom">
 										<input type="checkbox" name="perk" value="legroom">
-										<img src="img/icon-window.png" alt="Aisle seat">
+										<img src="img/icon-legroom.png" alt="Legroom">
 										<span class="label-copy text-left-xs">
 											<h3 class="box-label">More legroom</h3>
 											<h4 class="box-price">$479</h4>
 										</span>
 								</div>
-								<!-- <div class="m-05-xs p-1-xs box text-center-xs" id="airlinePref">
-										<input type="checkbox" name="perk" value="airline">
-										<img src="img/icon-airlinePref.png" alt="Aisle seat">
-										<span class="label-copy text-left-xs">
-											<h3 class="box-label">Preferred airline</h3>
-											<h4 class="box-price"></h4>
-										</span>
-								</div> -->
 								<div class="m-05-xs p-1-xs box text-center-xs" id="layovers">
 										<input type="checkbox" name="perk" value="layovers">
 										<img src="img/icon-layovers.png" alt="Aisle seat">
@@ -260,7 +204,7 @@
 								</div>
 								<div class="m-05-xs p-1-xs box text-center-xs" id="wifi">
 										<input type="checkbox" name="perk" value="wifi">
-										<img src="img/icon-outlet.png" alt="Aisle seat">
+										<img src="img/icon-wifi.png" alt="Wifi">
 										<span class="label-copy text-left-xs">
 											<h3 class="box-label">Wifi</h3>
 											<h4 class="box-price">$287</h4>
@@ -326,11 +270,14 @@
 									<a href="#" class="btn-right">Book Flight</a>
 								</div>
 							</div>
-							<div class="flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
+							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
 								<div class="flights-icons">
 									
 								</div>
 								<a href="#" class="text-9-xs bold">View all flight details <span style="font-size:1.75em;line-height: .5;">⌄</span></a>
+							</div>
+							<div class="flight-details-box flex-block-md">
+								Flight map
 							</div>
 	    			</li>
 	    			<li class="flights-item m-t-1-xs alaska">
@@ -435,7 +382,9 @@
 									</div>
 								</div>
 								<div class="flights-item-pricebox text-right-xs">
+
 									<div class="flights-item-price bold text-7-xs text-color-dark m-t-05-xs">$247</div>
+									<img src="img/icon-outlet.png" alt="Outlet" style="width: 20px">
 									<!-- <a href="#" class="btn-right">Book Flight</a> -->
 								</div>
 							</div>
