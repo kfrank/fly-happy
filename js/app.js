@@ -16,14 +16,16 @@ $(document).ready(function() {
   });
   $('.clear').click(function (e) {
     $('.box').removeClass('selected');
-    // $('.flights-icons').empty();
+    $('.flights-item').hide();
+    $('.flights-best .flights-item-161').fadeIn();
+    $('.flights-all .flights-item').fadeIn();
+    $('.flights-all .flights-item-161').hide();
   });
  
   $('.flights-item').hide();
   $('.btnSearch').click(function (e) {
     $('.flights-item').hide();
     $('.list-placeholder').addClass('hide-xs');
-    // $('.flights-icons').empty();
     if ($('.box').hasClass('selected')) {
       $('.selected').each(function(){
         var selected = $(this).attr('id');
