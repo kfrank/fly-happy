@@ -40,10 +40,10 @@ $(document).ready(function() {
           $('.flights-all .flights-item-200').hide();
           $('#alaska-1 .flights-item-price').text('$225');
 
-        } else if ( selected == 'rushhour') {
-          $('.flights-best .flights-item-275').fadeIn();
+        } else if ( selected == 'traffic') {
+          $('.flights-best .flights-item-262').fadeIn();
           $('.flights-all .flights-item').fadeIn();
-          $('.flights-all .flights-item-275').hide();
+          $('.flights-all .flights-item-262').hide();
 
         } else if ( selected == 'aisle' || selected == 'middle' ) {
           $('.flights-best .flights-item-161').fadeIn();
