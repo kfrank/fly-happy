@@ -11,7 +11,7 @@ html, body, .min-h-100-xs {
   height: 100%; }
 
 body .wrap {
-  min-width: 1000px; }
+  min-width: 1300px; }
 
 .pointer {
   cursor: pointer; }
@@ -197,6 +197,9 @@ img {
   .flight-details-box.open {
     display: block !important; }
 
+.flights-all .flights-item {
+  flex-basis: 48.5%; }
+
 .btn-right {
   padding: .75rem 1.5rem .625rem;
   font-size: .75em;
@@ -205,5 +208,9 @@ img {
   .btn-right:hover {
     background: #F1476F;
     color: #fff; }
+  .btn-right.btn-small {
+    padding: .5rem 1.25rem .375rem;
+    display: block;
+    margin-bottom: .5rem; }
 
 /*# sourceMappingURL=style.css.map */

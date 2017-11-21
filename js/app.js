@@ -15,25 +15,49 @@ $(document).ready(function() {
   });
   $('.clear').click(function (e) {
     $('.box').removeClass('selected');
-    $('.flights-icons').empty();
+    // $('.flights-icons').empty();
   });
-  $('.list').hide();
+ 
+  $('.flights-item').hide();
   $('.btnSearch').click(function (e) {
-    $('.list').fadeIn();
+    $('.flights-item').hide();
     $('.list-placeholder').addClass('hide-xs');
-  }); 
-  $('.btnSearch').click(function (e) {
-    $('.flights-icons').empty();
-    $('.selected').each(function(){
-      var selected = $(this).attr('id');
-      console.log(selected);
+    // $('.flights-icons').empty();
+    if ($('.box').hasClass('selected')) {
+      $('.selected').each(function(){
+        var selected = $(this).attr('id');
 
-      if ($('.flights-item').hasClass('.alaska') && selected == checkedbag) {
-        console.log('yes');
-      } else {
-        $('.flights-icons').prepend('<img style="height: 15px;margin-right:5px;" src="img/icon-' + selected  + '.png" class="icon-' + selected +'" />')
-      }
-    });
+        if ( selected == 'legroom'){
+          $('.flights-item-379').fadeIn();
+        } else if ( selected == 'checkedbag') {
+          $('.flights-item-200').fadeIn();
+          $('#alaska-1 .flights-item-price').text('$225');
+
+        } else if ( selected == 'rushhour') {
+          $('.flights-item-275').fadeIn();
+
+        } else if ( selected == 'aisle' || selected == 'middle' ) {
+          $('.flights-item-161').fadeIn();
+
+        } else if ( selected == 'wifi') {
+          $('.flights-item-200').fadeIn();
+          $('#alaska-1 .flights-item-price').text('$230');
+
+        } else {
+          $('.flights-item-200').fadeIn();
+        }
+      });
+    } else {
+      console.log('null');
+      $('.flights-item-161').fadeIn();
+    }
+
+      // if ($('.flights-item').hasClass('.alaska') && selected == checkedbag) {
+      //   console.log('yes');
+      // } else {
+      //   $('.flights-icons').prepend('<img style="height: 15px;margin-right:5px;" src="img/icon-' + selected  + '.png" class="icon-' + selected +'" />')
+      // }
+    
   });
   $('.flight-details-toggle').each(function(){
     $(this).click(function(){
