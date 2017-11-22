@@ -56,7 +56,7 @@ $(document).ready(function() {
           $('#alaska-1 .flights-item-price').text('$225');
           $('#delta .flights-item-price').text('$404');
 
-        } else if ( selected.includes('rushhour')) {
+        } else if ( selected.includes('traffic')) {
           $('.flights-best .flights-icons .icon-wifi').remove();
           $('.flights-best .flights-item-262').fadeIn();
           $('.flights-all .flights-item').fadeIn();
