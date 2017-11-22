@@ -27,41 +27,58 @@ $(document).ready(function() {
     $('.flights-item').hide();
     $('.list-placeholder').addClass('hide-xs');
     if ($('.box').hasClass('selected')) {
+      var selected = [];
       $('.selected').each(function(){
-        var selected = $(this).attr('id');
+        selected.push($(this).attr('id'));
 
-        if ( selected == 'legroom'){
+      });
+      console.log(selected);
+        if ( selected.includes('legroom','wifi') ){
+          console.log('yes');
+          $('.flights-best .flights-item-379 .flights-icons .icon-wifi').remove();
           $('.flights-best .flights-item-379').fadeIn();
           $('.flights-all .flights-item').fadeIn();
           $('.flights-all .flights-item-379').hide();
-        } else if ( selected == 'checkedbag') {
+          $('.flights-best .flights-item-379 .flights-icons').prepend('<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-wifi.png" class="icon-wifi">');
+
+        } else if ( selected.includes('legroom') ){
+          $('.flights-best .flights-icons .icon-wifi').remove();
+          $('.flights-best .flights-item-379').fadeIn();
+          $('.flights-all .flights-item').fadeIn();
+          $('.flights-all .flights-item-379').hide();
+        } else if ( selected.includes('checkedbag')) {
+          $('.flights-best .flights-icons .icon-wifi').remove();
           $('.flights-best .flights-item-200').fadeIn();
           $('.flights-all .flights-item').fadeIn();
           $('.flights-all .flights-item-200').hide();
           $('#alaska-1 .flights-item-price').text('$225');
 
-        } else if ( selected == 'traffic') {
+        } else if ( selected.includes('rushhour')) {
+          $('.flights-best .flights-icons .icon-wifi').remove();
           $('.flights-best .flights-item-262').fadeIn();
           $('.flights-all .flights-item').fadeIn();
           $('.flights-all .flights-item-262').hide();
 
-        } else if ( selected == 'aisle' || selected == 'middle' ) {
+        } else if ( selected.includes('aisle') || selected.includes('middle') ) {
+          $('.flights-best .flights-icons .icon-wifi').remove();
           $('.flights-best .flights-item-161').fadeIn();
           $('.flights-all .flights-item').fadeIn();
           $('.flights-all .flights-item-161').hide();
 
-        } else if ( selected == 'wifi') {
+        } else if ( selected.includes('wifi')) {
+          $('.flights-best .flights-item-200 .flights-icons .icon-wifi').remove();
           $('.flights-best .flights-item-200').fadeIn();
           $('.flights-all .flights-item').fadeIn();
           $('#alaska-1 .flights-item-price').text('$230');
           $('.flights-all .flights-item-200').hide();
+          $('.flights-best .flights-item-200 .flights-icons').prepend('<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-wifi.png" class="icon-wifi">');
 
         } else {
+          $('.flights-best .flights-icons .icon-wifi').remove();
           $('.flights-best .flights-item-200').fadeIn();
           $('.flights-all .flights-item').fadeIn();
           $('.flights-all .flights-item-200').hide();
         }
-      });
     } else {
       $('.flights-item-161').fadeIn();
       $('.flights-all .flights-item').fadeIn();
