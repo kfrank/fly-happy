@@ -33,7 +33,7 @@ $(document).ready(function() {
 
       });
       console.log(selected);
-        if ( selected.includes('legroom','wifi') ){
+        if ( selected.includes('legroom') && selected.includes('wifi') ){
           console.log('yes');
           $('.flights-best .flights-item-379 .flights-icons .icon-wifi').remove();
           $('.flights-best .flights-item-379').fadeIn();
@@ -42,6 +42,7 @@ $(document).ready(function() {
           $('.flights-best .flights-item-379 .flights-icons').prepend('<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-wifi.png" class="icon-wifi">');
           $('#delta .flights-item-price').text('$395');
         } else if ( selected.includes('legroom') ){
+          $('#delta .flights-item-price').text('$379');
           $('.flights-best .flights-icons .icon-wifi').remove();
           $('.flights-best .flights-item-379').fadeIn();
           $('.flights-all .flights-item').fadeIn();
@@ -53,6 +54,7 @@ $(document).ready(function() {
           $('.flights-all .flights-item').fadeIn();
           $('.flights-all .flights-item-200').hide();
           $('#alaska-1 .flights-item-price').text('$225');
+          $('#delta .flights-item-price').text('$404');
 
         } else if ( selected.includes('rushhour')) {
           $('.flights-best .flights-icons .icon-wifi').remove();
@@ -60,6 +62,7 @@ $(document).ready(function() {
           $('.flights-all .flights-item').fadeIn();
           $('.flights-all .flights-item-262').hide();
           $('#alaska-1 .flights-item-price').text('$200');
+          $('#delta .flights-item-price').text('$379');
 
         } else if ( selected.includes('aisle') || selected.includes('middle') ) {
           $('.flights-best .flights-icons .icon-wifi').remove();
@@ -67,6 +70,7 @@ $(document).ready(function() {
           $('.flights-all .flights-item').fadeIn();
           $('.flights-all .flights-item-161').hide();
           $('#alaska-1 .flights-item-price').text('$200');
+          $('#delta .flights-item-price').text('$379');
 
         } else if ( selected.includes('wifi')) {
           $('.flights-best .flights-item-200 .flights-icons .icon-wifi').remove();
@@ -82,6 +86,7 @@ $(document).ready(function() {
           $('.flights-best .flights-item-200').fadeIn();
           $('.flights-all .flights-item').fadeIn();
           $('.flights-all .flights-item-200').hide();
+          $('#delta .flights-item-price').text('$379');
         }
     } else {
       $('.flights-item-161').fadeIn();
