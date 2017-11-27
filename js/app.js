@@ -44,6 +44,10 @@ $(document).ready(function() {
           $('.flights-all .flights-item').fadeIn();
           $('.flights-all .flights-item-379').hide();
           $('#delta .flights-item-price').text('$395');
+        } else if ( selected.includes('daylight') && selected.includes('traffic')) {
+          $('.flights-best .flights-item-248').fadeIn();
+          $('.flights-all .flights-item').fadeIn();
+          $('.flights-all .flights-item-248').hide();
         } else if ( selected.includes('legroom') ){
           $('#delta .flights-item-price').text('$379');
           $('.flights-best .flights-item-379').fadeIn();
@@ -76,6 +80,10 @@ $(document).ready(function() {
           $('.flights-all .flights-item').fadeIn();
           $('#alaska-1 .flights-item-price').text('$216');
           $('.flights-all .flights-item-200').hide();
+        } else if ( selected.includes('daylight')) {
+          $('.flights-best .flights-item-248').fadeIn();
+          $('.flights-all .flights-item').fadeIn();
+          $('.flights-all .flights-item-248').hide();
         } else {
           $('#alaska-1 .flights-item-price').text('$200');
           $('.flights-best .flights-item-200').fadeIn();
