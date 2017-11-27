@@ -113,6 +113,12 @@ $(document).ready(function() {
     if ($('.flights-item').hasClass('no-freefood')){
       $('.no-freefood .icon-freefood').attr('src','img/icon-no-freefood.png');
     }
+    if ($('.flights-item').hasClass('no-rushhour')){
+      $('.no-rushhour .icon-traffic').attr('src','img/icon-no-rushhour.png');
+    }
+    if ($('.flights-item').hasClass('no-checkedbag')){
+      $('.no-checkedbag .icon-checkedbag').attr('src','img/icon-no-checkedbag.png');
+    }
 
       // if ($('.flights-item').hasClass('.alaska') && selected == checkedbag) {
       //   console.log('yes');
