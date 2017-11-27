@@ -91,26 +91,10 @@ img {
   border-radius: 5px; }
 
 .perks {
-  max-height: calc(100vh - 16rem);
+  max-height: calc(100vh - 12rem);
   overflow-y: scroll;
   position: relative;
   padding: .5rem; }
-  @media screen and (min-width: 768px) {
-    .perks:after {
-      content: "";
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 49%;
-      height: 100px;
-      background: rgba(255, 255, 255, 0);
-      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, RGBA(250, 250, 250, 1) 50%);
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, RGBA(250, 250, 250, 1)));
-      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, RGBA(250, 250, 250, 1) 50%);
-      background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, RGBA(250, 250, 250, 1) 50%);
-      background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, RGBA(250, 250, 250, 1) 50%);
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, RGBA(250, 250, 250, 1) 50%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); } }
   .perks .clear {
     color: #98A0AF; }
     .perks .clear.selected {
@@ -170,9 +154,6 @@ img {
 .flights-icons {
   line-height: 0; }
 
-.btnSearch {
-  opacity: .5; }
-
 .btnSearch, .btn-right {
   background-image: linear-gradient(-146deg, #E2644D 0%, #F1476F 100%);
   border-radius: 40px;
@@ -189,6 +170,11 @@ img {
   -o-transition: backround 0.5s ease;
   transition: backround 0.5s ease;
   outline: 0 !important; }
+
+.btnSearch {
+  background: #DCE1E5; }
+  .btnSearch.active {
+    background-image: linear-gradient(-146deg, #E2644D 0%, #F1476F 100%); }
 
 .list-placeholder {
   display: flex;

@@ -7,7 +7,6 @@
   
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:100,400'>
 	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
-<!-- <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/css/nanoscroller.min.css'> -->
 
       <link rel="stylesheet" href="css/style.css">
 
@@ -31,21 +30,6 @@
 								<span class="pointer text-9-xs text-color-light p-lr-05-xs p-t-1-xs p-b-05-xs inline-block-xs"></span>
 							</div>
 						</div>
-						<!-- <div class="control radio passengers flex-basis-50-xs">
-							<div class="control-item">
-								<h6 class="hide-xs">Passengers</h6>
-								<div class="flex-block-xs flex-justify-end-xs flex-item-center-xs">
-									<i class="zmdi zmdi-accounts" style="margin-top:7px"></i>
-									<label style="margin-top:9px" class="p-lr-05-xs bold">
-										<div><span>1</span></div>
-									</label>
-									<section class="spinner p-r-05-xs">
-										<button data-action="plus" class="button-round"><i class="zmdi zmdi-plus"></i></button>
-										<button data-action="minus" class="button-round"><i class="zmdi zmdi-minus"></i></button>
-									</section>
-								</div>
-							</div>
-						</div> -->
 					</div>
 					<div class="flex-block-xs border-thin-b-light-xs">
 						<div class="control select flex-basis-50-xs border-thin-r-light-xs">
@@ -167,7 +151,7 @@
 										<img src="img/icon-checkedbag.png" alt="Aisle seat">
 										<span class="label-copy text-left-xs">
 											<h3 class="box-label">Checking a bag</h3>
-											<h4 class="box-price">$225</h4>
+											<h4 class="box-price">+$0-$50</h4>
 										</span>
 								</div>
 								<div class="m-05-xs p-1-xs box text-center-xs" id="carryon">
@@ -207,7 +191,7 @@
 										<img src="img/icon-wifi.png" alt="Wifi">
 										<span class="label-copy text-left-xs">
 											<h3 class="box-label">Wifi</h3>
-											<h4 class="box-price">$216</h4>
+											<h4 class="box-price">+$0-$16</h4>
 										</span>
 								</div>
 								<div class="m-05-xs p-1-xs box text-center-xs" id="freefood">
@@ -221,7 +205,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="control relative-xs z-1-xs text-center-xs">
+					<div class="control absolute-xs z-1-xs text-center-xs" style="left:0;right:0;bottom:1rem;">
 						<button class="btnSearch">Search Flights</button>
 					</div>
 				</div>
@@ -239,7 +223,7 @@
 						<span class="text-9-xs">Calcuated to match your preferences</span>
 					</div>
 	    		<ul class="flights flights-best list-unstyled">
-	    			<li class="flights-item m-b-1-xs flights-item-161" id="spirit">
+	    			<li class="flights-item m-b-1-xs flights-item-161 no-freefood no-carryon no-wifi no-outlet no-daylight no-legroom" id="spirit" >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -249,7 +233,7 @@
 												<span class="bold">11:45am - 7:52pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">Spirit • 5h 25m • Nonstop • SEA-EWR</span>
+												<span class="text-9-xs">Spirit • 5h 25m • Nonstop • SEA (Seattle) - EWR (Newark)</span>
 											</div>
 										</div>
 									</div>
@@ -260,7 +244,7 @@
 												<span class="bold">7:40am - 10:37pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">Spirit • 6h 31m • Nonstop • EWR-SEA</span>
+												<span class="text-9-xs">Spirit • 6h 31m • Nonstop • EWR (Newark) - (Seattle) SEA</span>
 											</div>
 										</div>
 									</div>
@@ -272,8 +256,6 @@
 							</div>
 							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
 								<div class="flights-icons">
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-layovers.png" class="icon-layovers" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-middle.png" class="icon-middle" />
 								</div>
 								<a href="#" class="text-9-xs bold">View flight details</a>
 							</div>
@@ -282,7 +264,7 @@
 								<p class="text-center-xs bold p-b-2-xs">Seat Map</p>
 							</div>
 	    			</li>
-	    			<li class="flights-item m-b-1-xs flights-item-200" id="alaska-1">
+	    			<li class="flights-item m-b-1-xs flights-item-200 no-daylight no-legroom no-rushhour" id="alaska-1" >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -292,7 +274,7 @@
 												<span class="bold">7:30am - 3:46pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">Alaska • 5h 16m • Nonstop • SEA-JFK</span>
+												<span class="text-9-xs">Alaska • 5h 16m • Nonstop • SEA (Seattle) - JFK (NYC)</span>
 											</div>
 										</div>
 									</div>
@@ -303,7 +285,7 @@
 												<span class="bold">4:05pm - 7:38pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">Alaska • 6h 31m • Nonstop • JFK-SEA</span>
+												<span class="text-9-xs">Alaska • 6h 31m • Nonstop • JFK (NYC) - (Seattle) SEA</span>
 											</div>
 										</div>
 									</div>
@@ -315,12 +297,6 @@
 							</div>
 							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
 								<div class="flights-icons">
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-outlet.png" class="icon-outlet" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-daylight.png" class="icon-daylight" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-layovers.png" class="icon-layovers" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-redeye.png" class="icon-redeye" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-carryon.png" class="icon-carryon" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-middle.png" class="icon-middle" />
 								</div>
 								<a href="#" class="text-9-xs bold">View flight details</a>
 							</div>
@@ -329,7 +305,7 @@
 								<p class="text-center-xs bold p-b-2-xs">Seat Map</p>
 							</div>		
 						</li>
-	    			<li class="flights-item m-b-1-xs flights-item-379" id="delta">
+	    			<li class="flights-item m-b-1-xs flights-item-379 no-daylight" id="delta" >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -339,7 +315,7 @@
 												<span class="bold">1:05pm - 9:24pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">Delta • 5h 25m • Nonstop • SEA-EWR</span>
+												<span class="text-9-xs">Delta • 5h 25m • Nonstop • SEA (Seattle) - EWR (Newark)</span>
 											</div>
 										</div>
 									</div>
@@ -350,7 +326,7 @@
 												<span class="bold">6:30pm - 10:08pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">Delta • 6h 31m • Nonstop • EWR-SEA</span>
+												<span class="text-9-xs">Delta • 6h 31m • Nonstop • EWR (Newark) - (Seattle) SEA</span>
 											</div>
 										</div>
 									</div>
@@ -362,12 +338,6 @@
 							</div>
 							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
 								<div class="flights-icons">
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-outlet.png" class="icon-outlet" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-legroom.png" class="icon-legroom" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-layovers.png" class="icon-layovers" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-redeye.png" class="icon-redeye" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-carryon.png" class="icon-carryon" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-middle.png" class="icon-middle" />
 								</div>
 								<a href="#" class="text-9-xs bold">View flight details</a>
 							</div>
@@ -376,7 +346,7 @@
 								<p class="text-center-xs bold p-b-2-xs">Seat Map</p>
 							</div>
 	    			</li>
-	    			<li class="flights-item m-b-1-xs flights-item-247" id="frontier">
+	    			<li class="flights-item m-b-1-xs flights-item-247 no-freefood no-carryon no-wifi no-outlet no-daylight no-legroom" id="frontier">
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -386,7 +356,7 @@
 												<span class="bold">5:32pm - 5:07pm+1</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">Frontier • 23h 25m • 12h layover in DEN • EWR-SEA</span>
+												<span class="text-9-xs">Frontier • 23h 25m • 12h layover in DEN • EWR (Newark) - (Seattle) SEA</span>
 											</div>
 										</div>
 									</div>
@@ -397,7 +367,7 @@
 												<span class="bold">9:20am - 9:56pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">Frontier • 8h 05m • 50m layover in CVG • SEA-EWR</span>
+												<span class="text-9-xs">Frontier • 8h 05m • 50m layover in CVG • SEA(Seattle)-EWR(Newark)</span>
 											</div>
 										</div>
 									</div>
@@ -409,7 +379,7 @@
 							</div>
 							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
 								<div class="flights-icons">
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-middle.png" class="icon-middle" />
+									<img style="height: 18px;margin-right:5px;filter: grayscale(100%)" src="img/icon-middle.png" class="icon-middle" />
 								</div>
 								<a href="#" class="text-9-xs bold">View flight details</a>
 							</div>
@@ -418,7 +388,7 @@
 								<p class="text-center-xs bold p-b-2-xs">Seat Map</p>
 							</div>
 	    			</li>
-	    			<li class="flights-item m-b-1-xs flights-item-262" id="jetblue">
+	    			<li class="flights-item m-b-1-xs flights-item-262 no-rushhour no-daylight no-legroom" id="jetblue">
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -428,7 +398,7 @@
 												<span class="bold">7:32pm - 7:07pm+1</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">JetBlue • 5h 25m • Nonstop • SEA-JFK</span>
+												<span class="text-9-xs">JetBlue • 5h 25m • Nonstop • SEA(Seattle)-JFK(NYC)</span>
 											</div>
 										</div>
 									</div>
@@ -439,7 +409,7 @@
 												<span class="bold">9:20am - 9:56pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">JetBlue • 6h 31m • Nonstop • JFK-SEA</span>
+												<span class="text-9-xs">JetBlue • 6h 31m • Nonstop • JFK(NYC)-(Seattle)SEA</span>
 											</div>
 										</div>
 									</div>
@@ -451,12 +421,6 @@
 							</div>
 							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
 								<div class="flights-icons">
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-outlet.png" class="icon-outlet" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-daylight.png" class="icon-daylight" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-layovers.png" class="icon-layovers" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-redeye.png" class="icon-redeye" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-carryon.png" class="icon-carryon" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-middle.png" class="icon-middle" />
 								</div>
 								<a href="#" class="text-9-xs bold">View flight details</a>
 							</div>
@@ -465,7 +429,7 @@
 								<p class="text-center-xs bold p-b-2-xs">Seat Map</p>
 							</div>
 	    			</li>
-	    			<li class="flights-item m-b-1-xs flights-item-247" id="alaska-2">
+	    			<li class="flights-item m-b-1-xs flights-item-247 no-daylight no-legroom no-rushhour" id="alaska-2">
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -475,7 +439,7 @@
 												<span class="bold">7:55pm - 5:59pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">Alaska • 5h 25m • Nonstop • SEA-JFK</span>
+												<span class="text-9-xs">Alaska • 5h 25m • Nonstop • SEA(Seattle)-JFK(NYC)</span>
 											</div>
 										</div>
 									</div>
@@ -486,7 +450,7 @@
 												<span class="bold">9:00am - 12:31pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">Alaska • 6h 31m • Nonstop • JFK-SEA</span>
+												<span class="text-9-xs">Alaska • 6h 31m • Nonstop • JFK(NYC)-(Seattle)SEA</span>
 											</div>
 										</div>
 									</div>
@@ -498,11 +462,6 @@
 							</div>
 							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
 								<div class="flights-icons">
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-outlet.png" class="icon-outlet" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-layovers.png" class="icon-layovers" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-redeye.png" class="icon-redeye" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-carryon.png" class="icon-carryon" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-middle.png" class="icon-middle" />
 								</div>
 								<a href="#" class="text-9-xs bold">View flight details</a>
 							</div>
@@ -511,7 +470,7 @@
 								<p class="text-center-xs bold p-b-2-xs">Seat Map</p>
 							</div>
 	    			</li>
-	    			<li class="flights-item m-b-1-xs flights-item-247" id="alaska-3">
+	    			<li class="flights-item m-b-1-xs flights-item-247 no-daylight no-legroom no-rushhour" id="alaska-3" >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -521,7 +480,7 @@
 												<span class="bold">11:05pm - 7:21am+1</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">Alaska • 5h 25m • Nonstop • SEA-EWR</span>
+												<span class="text-9-xs">Alaska • 5h 25m • Nonstop • SEA(Seattle)-EWR(Newark)</span>
 											</div>
 										</div>
 									</div>
@@ -532,7 +491,7 @@
 												<span class="bold">3:50pm - 7:30pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">Alaska • 6h 31m • Nonstop • EWR-SEA</span>
+												<span class="text-9-xs">Alaska • 6h 31m • Nonstop • EWR(Newark)-(Seattle)SEA</span>
 											</div>
 										</div>
 									</div>
@@ -544,10 +503,6 @@
 							</div>
 							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
 								<div class="flights-icons">
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-outlet.png" class="icon-outlet" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-layovers.png" class="icon-layovers" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-carryon.png" class="icon-carryon" />
-									<img style="height: 15px;margin-right:5px;filter: grayscale(100%)" src="img/icon-middle.png" class="icon-middle" />
 								</div>
 								<a href="#" class="text-9-xs bold">View flight details</a>
 							</div>
@@ -562,7 +517,7 @@
 						<span class="text-9-xs">Match dates and cities, but may not match all preferences</span>
 					</div>
 	    		<ul class="flights flights-all list-unstyled flex-block-md flex-justify-between-xs flex-wrap-xs">
-	    			<li class="flights-item flights-item-247 m-b-1-xs">
+	    			<li class="flights-item flights-item-247 m-b-1-xs no-legroom" >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -572,7 +527,8 @@
 												<span class="bold">7:55am - 4:20pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">5h 15m • SEA-EWR</span>
+												<span class="text-9-xs">Alaska • 5h 15m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">SEA (Seattle) - EWR (Newark)</span>
 											</div>
 										</div>
 									</div>
@@ -580,10 +536,11 @@
 										<img src="img/airline-alaska.png" alt="" style="width: 30px" class="m-r-05-xs">
 										<div class="flights-item-depart-details m-t-05-xs">
 											<div class="flights-item-depart-details-time">
-												<span class="bold">9:00am - 12:31pm</span>
+												<span class="bold text-8-xs">9:00am - 12:31pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">6h 34m • EWR-SEA</span>
+												<span class="text-9-xs">Alaska • 6h 34m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">EWR (Newark) – SEA (Seattle)</span>
 											</div>
 										</div>
 									</div>
@@ -591,22 +548,26 @@
 								<div class="flights-item-pricebox text-right-xs">
 									<div class="flights-item-price bold text-7-xs text-color-dark m-t-05-xs">$247</div>
 									<a href="#" class="btn-right btn-small">Book</a>
-									<div><img src="img/icon-outlet.png" alt="Outlet" style="height: 13px;filter:grayscale(100%);" class="m-r-05-xs"><img src="img/icon-redeye.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);" class="m-r-05-xs"><img src="img/icon-layovers.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);"></div>
 									<!-- <a href="#" class="btn-right">Book Flight</a> -->
 								</div>
 							</div>
+							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
+								<div class="flights-icons">
+								</div>
+							</div>
 	    			</li>
-	    			<li class="flights-item flights-item-288 m-b-1-xs">
+	    			<li class="flights-item flights-item-288 m-b-1-xs no-daylight no-legroom no-daylight" >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
 										<img src="img/airline-delta.png" alt="" style="width: 30px" class="m-r-05-xs">
 										<div class="flights-item-depart-details m-t-05-xs">
 											<div class="flights-item-depart-details-time">
-												<span class="bold">11:05pm - 7:21am</span>
+												<span class="bold">11:05am - 7:21pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">5h 32m • SEA-JFK</span>
+												<span class="text-9-xs">Delta • 5h 32m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">SEA (Seattle) - JFK (NYC)</span>
 											</div>
 										</div>
 									</div>
@@ -617,21 +578,23 @@
 												<span class="bold">3:50pm - 7:30pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">6h 05m • JFK-SEA</span>
+												<span class="text-9-xs">Delta • 6h 05m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">JFK (NYC) - SEA (Seattle)</span>
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="flights-item-pricebox text-right-xs">
-							
 									<div class="flights-item-price bold text-7-xs text-color-dark m-t-05-xs">$288</div>
 									<a href="#" class="btn-right btn-small">Book</a>
-									<div><img src="img/icon-redeye.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);" class="m-r-05-xs"><img src="img/icon-layovers.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);"></div>
-									<!-- <a href="#" class="btn-right">Book Flight</a> -->
+								</div>
+							</div>
+							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
+								<div class="flights-icons">
 								</div>
 							</div>
 	    			</li>
-	    			<li class="flights-item flights-item-275 m-b-1-xs">
+	    			<li class="flights-item flights-item-275 m-b-1-xs no-rushhour no-daylight no-legroom" >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -641,7 +604,8 @@
 												<span class="bold">9:50pm - 5:59pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">5h 25m • SEA-JFK</span>
+												<span class="text-9-xs">JetBlue • 5h 25m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">SEA (Seattle) - JFK (NYC)</span>
 											</div>
 										</div>
 									</div>
@@ -652,7 +616,8 @@
 												<span class="bold">5:39pm - 9:02pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">6h 04m • JFK-SEA</span>
+												<span class="text-9-xs">JetBlue • 6h 04m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">JFK (NYC) - SEA (Seattle)</span>
 											</div>
 										</div>
 									</div>
@@ -660,12 +625,14 @@
 								<div class="flights-item-pricebox text-right-xs">
 									<div class="flights-item-price bold text-7-xs text-color-dark m-t-05-xs">$275</div>
 									<a href="#" class="btn-right btn-small">Book</a>
-									<div><img src="img/icon-redeye.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);" class="m-r-05-xs"><img src="img/icon-layovers.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);"></div>
-									<!-- <a href="#" class="btn-right">Book Flight</a> -->
+								</div>
+							</div>
+							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
+								<div class="flights-icons">
 								</div>
 							</div>
 	    			</li>
-	    			<li class="flights-item flights-item-247 m-b-1-xs">
+	    			<li class="flights-item flights-item-247 m-b-1-xs no-freefood no-carryon no-wifi no-outlet no-daylight no-legroom no-redeye no-layovers" >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -675,7 +642,8 @@
 												<span class="bold">5:32pm - 5:07pm+1</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">23h 20m • 12h 05min in DEN</span>
+												<span class="text-9-xs">Frontier • Layover 12h 5min in DEN</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">SEA (Seattle) - JFK (NYC)</span>
 											</div>
 										</div>
 									</div>
@@ -686,7 +654,8 @@
 												<span class="bold">9:20am - 9:56pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">9h 52m • 50m in CVG</span>
+												<span class="text-9-xs">Frontier • Layover 50m in CVG</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">EWR (Newark) - SEA (Seattle)</span>
 											</div>
 										</div>
 									</div>
@@ -694,11 +663,14 @@
 								<div class="flights-item-pricebox text-right-xs">
 									<div class="flights-item-price bold text-7-xs text-color-dark m-t-05-xs">$247</div>
 									<a href="#" class="btn-right btn-small">Book</a>
-									<!-- <a href="#" class="btn-right">Book Flight</a> -->
+								</div>
+							</div>
+							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
+								<div class="flights-icons">
 								</div>
 							</div>
 	    			</li>
-	    			<li class="flights-item flights-item-200 m-b-1-xs">
+	    			<li class="flights-item flights-item-200 m-b-1-xs no-daylight no-legroom no-rushhour" >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -708,7 +680,8 @@
 												<span class="bold">7:30am - 3:46pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">5h 35m • SEA-EWR</span>
+												<span class="text-9-xs">Alaska • 5h 35m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">SEA (Seattle) - EWR (Newark)</span>
 											</div>
 										</div>
 									</div>
@@ -719,7 +692,8 @@
 												<span class="bold">4:05pm - 7:38pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">6h 33m • EWR-SEA</span>
+												<span class="text-9-xs">Alaska • 6h 33m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">EWR (Newark) - SEA (Seattle)</span>
 											</div>
 										</div>
 									</div>
@@ -727,14 +701,14 @@
 								<div class="flights-item-pricebox text-right-xs">
 									<div class="flights-item-price bold text-7-xs text-color-dark m-t-05-xs">$200</div>
 									<a href="#" class="btn-right btn-small">Book</a>
-									<div>
-										<img src="img/icon-outlet.png" alt="Outlet" style="height: 13px;filter:grayscale(100%);" class="m-r-05-xs"><img src="img/icon-redeye.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);" class="m-r-05-xs"><img src="img/icon-layovers.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);">
-									</div>
-									<!-- <a href="#" class="btn-right">Book Flight</a> -->
+								</div>
+							</div>
+							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
+								<div class="flights-icons">
 								</div>
 							</div>
 	    			</li>
-	    			<li class="flights-item flights-item-247 m-b-1-xs">
+	    			<li class="flights-item flights-item-247 m-b-1-xs no-daylight no-legroom no-rushhour no-redeye" >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -744,7 +718,8 @@
 												<span class="bold">11:05pm - 7:21am+1</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">5h 35m • SEA-EWR</span>
+												<span class="text-9-xs">Alaska • 5h 35m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">SEA (Seattle) - EWR (Newark)</span>
 											</div>
 										</div>
 									</div>
@@ -755,7 +730,8 @@
 												<span class="bold">3:50pm - 7:30pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">6h 31m • EWR-SEA</span>
+												<span class="text-9-xs">Alaska • 6h 31m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">EWR (Newark) - SEA (Seattle)</span>
 											</div>
 										</div>
 									</div>
@@ -763,14 +739,14 @@
 								<div class="flights-item-pricebox text-right-xs">
 									<div class="flights-item-price bold text-7-xs text-color-dark m-t-05-xs">$247</div>
 									<a href="#" class="btn-right btn-small">Book</a>
-									<div>
-										<img src="img/icon-outlet.png" alt="Outlet" style="height: 13px;filter:grayscale(100%);" class="m-r-05-xs"><img src="img/icon-layovers.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);">
-									</div>
-									<!-- <a href="#" class="btn-right">Book Flight</a> -->
+								</div>
+							</div>
+							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
+								<div class="flights-icons">
 								</div>
 							</div>
 	    			</li>
-	    			<li class="flights-item flights-item-379 m-b-1-xs">
+	    			<li class="flights-item flights-item-379 m-b-1-xs no-daylight" >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -780,7 +756,8 @@
 												<span class="bold">1:05pm - 9:24pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">5h 35m • SEA-EWR</span>
+												<span class="text-9-xs">Delta • 5h 35m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">SEA (Seattle) - EWR (Newark)</span>
 											</div>
 										</div>
 									</div>
@@ -791,7 +768,8 @@
 												<span class="bold">6:30pm - 1:08pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">5h 52m • EWR-SEA</span>
+												<span class="text-9-xs">Delta • 5h 52m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">EWR (Newark) - SEA (Seattle)</span>
 											</div>
 										</div>
 									</div>
@@ -799,24 +777,25 @@
 								<div class="flights-item-pricebox text-right-xs">
 									<div class="flights-item-price bold text-7-xs text-color-dark m-t-05-xs">$379</div>
 									<a href="#" class="btn-right btn-small">Book</a>
-									<div>
-										<img src="img/icon-redeye.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);" class="m-r-05-xs"><img src="img/icon-layovers.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);">
-									</div>
-									<!-- <a href="#" class="btn-right">Book Flight</a> -->
+								</div>
+							</div>
+							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
+								<div class="flights-icons">
 								</div>
 							</div>
 	    			</li>
-	    			<li class="flights-item flights-item-161 m-b-1-xs">
+	    			<li class="flights-item flights-item-161 m-b-1-xs no-freefood no-carryon no-wifi no-outlet no-freefood no-daylight no-rushhour no-legroom"  >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
 										<img src="img/airline-spirit.png" alt="" style="width: 30px" class="m-r-05-xs">
 										<div class="flights-item-depart-details m-t-05-xs">
 											<div class="flights-item-depart-details-time">
-												<span class="bold">11:45pm - 7:52pm</span>
+												<span class="bold">11:45am - 7:52pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">5h 45m • SEA-JFK</span>
+												<span class="text-9-xs">Spirit • 5h 45m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">SEA (Seattle) - JFK (NYC)</span>
 											</div>
 										</div>
 									</div>
@@ -827,7 +806,8 @@
 												<span class="bold">7:40pm - 10:37pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">6h 12m • JFK-SEA</span>
+												<span class="text-9-xs">Spirit • 6h 12m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">JFK (NYC) - SEA (Seattle)</span>
 											</div>
 										</div>
 									</div>
@@ -835,12 +815,14 @@
 								<div class="flights-item-pricebox text-right-xs">
 									<div class="flights-item-price bold text-7-xs text-color-dark m-t-05-xs">$161</div>
 									<a href="#" class="btn-right btn-small">Book</a>
-									<img src="img/icon-redeye.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);margin-right:8px"><img src="img/icon-layovers.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);">
-									<!-- <a href="#" class="btn-right">Book Flight</a> -->
+								</div>
+							</div>
+							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
+								<div class="flights-icons">
 								</div>
 							</div>
 	    			</li>
-	    			<li class="flights-item flights-item-214 m-b-1-xs">
+	    			<li class="flights-item flights-item-214 m-b-1-xs no-freefood no-carryon no-wifi no-outlet no-freefood no-rushhour no-legroom"  >
 	    				<div class="flex-block-md flex-justify-between-md flex-item-center-xs p-1-xs">
 		    				<div class="flights-item-flights">
 									<div class="flights-item-depart p-b-05-xs border-thin-b-light-xs flex-block-xs flex-item-center-xs">
@@ -850,7 +832,8 @@
 												<span class="bold">3:17pm - 5:03pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">5h 45m • SEA-EWR</span>
+												<span class="text-9-xs">Spirit • 5h 45m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">SEA (Seattle) - EWR (Newark)</span>
 											</div>
 										</div>
 									</div>
@@ -861,7 +844,8 @@
 												<span class="bold">6:30am - 2:17pm</span>
 											</div>
 											<div class="flights-item-depart-details-deets">
-												<span class="text-9-xs">6h 12m • EWR-SEA</span>
+												<span class="text-9-xs">Spirit • 6h 12m • Nonstop</span><br/>
+												<span class="text-9-xs" style="margin-top: -.25em;display: block;">EWR (Newark) - SEA (Seattle)</span>
 											</div>
 										</div>
 									</div>
@@ -869,7 +853,10 @@
 								<div class="flights-item-pricebox text-right-xs">
 									<div class="flights-item-price bold text-7-xs text-color-dark m-t-05-xs">$214</div>
 									<a href="#" class="btn-right btn-small">Book</a>
-									<img src="img/icon-redeye.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);margin-right:8px"><img src="img/icon-layovers.png" alt="Red eye" style="height: 13px;filter:grayscale(100%);margin-right:8px"><img src="img/icon-daylight.png" alt="Daylight" style="height: 13px;filter:grayscale(100%);">
+								</div>
+							</div>
+							<div class="flight-details-toggle flex-block-md flex-item-center-xs flex-justify-between-md p-lr-1-xs p-tb-05-xs border-thin-t-light-xs">
+								<div class="flights-icons">
 								</div>
 							</div>
 	    			</li>
