@@ -1,3 +1,4 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/emoreno911/pen/YVvNxK.
+Prototype for HCDE518 at the University of Washington.
+Uses curated flight data with simple logic.
 
- My prototype for the Flight Booking Challenge at UpLabs.com 
+Code losely based on: https://codepen.io/emoreno911/pen/YVvNxK.
